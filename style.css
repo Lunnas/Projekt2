@@ -40,9 +40,11 @@ header {
 }
 .link {
   color: transparent;
+  text-decoration: none;
 }
 .link-contact {
   color: transparent;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .links {
@@ -111,6 +113,7 @@ header {
   color: white;
   border: 3px solid #fff;
   z-index: 10;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .buttonHeader {
@@ -151,10 +154,21 @@ header {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  margin-bottom: 80px;
-  margin-left: 90px;
+  margin-bottom: 40px;
+  margin-left: 95px;
   margin-right: 90px;
+  text-align: justify;
 }
+.art2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-left: 95px;
+  margin-right: 90px;
+  text-align: justify;
+}
+
 .foto1 {
   width: 20%;
   aspect-ratio: 1/1;
@@ -180,7 +194,12 @@ header {
   height: 100%;
 }
 .name {
-  text-align: center;
+  text-align: left;
+  font-weight: 700;
+  margin: 20px;
+}
+.name2 {
+  text-align: left;
   font-weight: 700;
   margin: 20px;
 }
@@ -199,6 +218,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+  }
+  .art2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
   }
   .art:nth-of-type(odd) {
     flex-direction: row;
@@ -206,7 +232,6 @@ header {
   .art:nth-of-type(even) {
     flex-direction: row-reverse;
   }
-
   .foto1 {
     width: 15%;
     aspect-ratio: 1/1;
@@ -229,7 +254,10 @@ header {
     position: absolute;
     max-width: 480px;
     max-height: 104px;
-    margin: 10% 20%;
+    margin: 3% 20%;
+  }
+  .name2 {
+    text-align: right;
   }
   .discrip {
     font-weight: 400;
@@ -246,16 +274,18 @@ header {
   padding-top: 50px;
   position: relative;
 }
-.question{
-margin-left:30px;
+.question {
+  margin-left: 30px;
 }
 .wrapperServices {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 10%;
   align-items: center;
-  padding: 10%;
-  width: 100%;
+  margin-top: 5%;
   height: 80%;
+  padding-bottom: 3%;
 }
 .box-inside {
   display: flex;
@@ -296,6 +326,13 @@ margin-left:30px;
   color: black;
   align-items: baseline;
 }
+.name2 {
+  font-family: Roboto;
+  font-size: 2.4rem;
+  line-height: 28px;
+  color: black;
+  align-items: baseline;
+}
 .footer {
   position: relative;
   width: 100%;
@@ -321,12 +358,11 @@ margin-left:30px;
 .contact {
   margin: auto;
 }
-}
 @media screen and (min-width: 768px) {
-.prawa {
-  margin: 25px;
-}
-.contact {
-  margin-right: 80px;
-}
+  .prawa {
+    margin: 25px;
+  }
+  .contact {
+    margin-right: 80px;
+  }
 }
